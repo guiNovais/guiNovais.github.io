@@ -1,6 +1,8 @@
 # Site settings
-title: 'Guilherme Alberto'
-description: 'DFTBA'
+title: 'Guilherme Moraes'
+description: 'Desenvolvedor de softwares pela HOP<br>
+Especialista em IBM Watson<br>
+Entusiasta de Big Data e Inteligência Artificial'
 url: 'https://guialberto.github.io/'
 baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
@@ -9,8 +11,8 @@ baseurl: ''
 author:
   name: 'Guilherme Alberto de Moraes'
   email: g.alberto.moraes@gmail.com
-  twitter_username: gui_a_moraes
-  facebook_username: teeenso
+  twitter_username: gAlbertoMoraes
+  facebook_username: gAlbertoMoraes
   github_username:  guiAlberto
   linkedin_username:  guiAlberto
 

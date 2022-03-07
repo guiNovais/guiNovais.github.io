@@ -1,8 +1,6 @@
 # Site settings
 title: 'Guilherme Moraes'
 description: '👨‍💻 Desenvolvedor de softwares<br>
-🧠 Especialista em IBM Watson<br>
-💭 Hopper de carteirinha<br>
 🧭 O Sul é nosso Norte'
 url: 'https://guialberto.github.io/'
 baseurl: ''
@@ -18,7 +16,7 @@ author:
   linkedin_username:  guiAlberto
 
 defaults:
-  -
+ -
     scope:
       path: ''
       type: 'posts'

@@ -107,11 +107,11 @@ jQuery(document).ready(function($) {
         {{ with .Site.Params.Skills }}
             {{ range . }}
                 var bar_length = Math.round({{ .percentage }} / 10);
-                var bar_filled = Array(bar_length + 1).join("&#9611;");
-                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                var bar_filled = Array(bar_length + 1).join("&#9608;");
+                var bar_blank= Array(11 - bar_length).join(" ");
                 term.echo("[[b;{{ .color | default "grey" }};]{{ .name }}:]\n" +
-                        bar_filled + bar_blank + 
-                        {{ .percentage }} +"%");
+                        "" + bar_filled + bar_blank + 
+                        " " + {{ .percentage }} +"%");
                 {{ if .description }}
                     term.echo("{{ .description }}");
                 {{ end }}
@@ -124,11 +124,11 @@ jQuery(document).ready(function($) {
         {{ with .Site.Params.softSkills }}
             {{ range . }}
                 var bar_length = Math.round({{ .percentage }} / 10);
-                var bar_filled = Array(bar_length + 1).join("&#9611;");
-                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                var bar_filled = Array(bar_length + 1).join("&#9608;");
+                var bar_blank= Array(11 - bar_length).join(" ");
                 term.echo("[[b;{{ .color | default "grey" }};]{{ .name }}:]\n" +
-                       bar_filled + bar_blank +
-                       {{ .percentage }} +"%");
+                        "" + bar_filled + bar_blank + 
+                        " " + {{ .percentage }} +"%");
                 {{ if .description }}
                     term.echo("{{ .description }}");
                 {{ end }}
@@ -142,8 +142,8 @@ jQuery(document).ready(function($) {
         {{ with .Site.Params.languages }}
             {{ range . }}
                 var bar_length = Math.round({{ .percentage }} / 10);
-                var bar_filled = Array(bar_length + 1).join("&#9611;");
-                var bar_blank= Array(11 - bar_length).join("&#9617;");
+                var bar_filled = Array(bar_length + 1).join("&#9608;");
+                var bar_blank= Array(11 - bar_length).join(" ");
                 term.echo("[[b;{{ .color | default "grey" }};]{{ .name }}:]\n" +
                         "" + bar_filled + bar_blank + 
                         " " + {{ .percentage }} +"%");

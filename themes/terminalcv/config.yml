@@ -1,0 +1,147 @@
+BaseURL: "https://guilhermenovais.sh"
+title: "Guilherme Novais"
+
+params:
+  description: "Terminal format website"
+  prompt: "guest@guilhermeland"
+  promptColor: yellow
+  exitLocation: "about:blank"
+  greeting: |
+    Welcome to my website!
+    Type 'help' for a list of available commands
+
+  whois:
+    name: "Guilherme Novais"
+    profession: "Software Developer"
+    location: "Belo Horizonte, MG, Brazil"
+    email: "guilhermenovais.sh@gmail.com"
+    homelink: "https://guilhermenovais.sh/"
+    description: |
+      Hey there! I'm a curious soul navigating the fascinating worlds of ideas and exploration. I'm all about uncovering the wonders of technology, diving into the realms of software development and AI, and forever intrigued by what tomorrow's tech holds.
+  social:
+    - name: "github"
+      url: "         https://github.com/guiNovais/"
+    - name: "linkedin"
+      url: "       https://linkedin.com/in/guilhermenovaisdev/"
+    - name: "instagram"
+      url: "      https://instagram.com/guilhermenovais.sh/"
+
+  work:
+    - jobTitle: Systems Development Analyst
+      color: red
+      company: "Framework Digital"
+      location: Belo Horizonte, MG
+      date: May 2022 - Present
+      description: Back-end development banking systems written in C# .NET and Java SpringBoot based framework.
+
+    - jobTitle: Systems Analyst
+      color: red
+      company: "Montreal M.I"
+      location: Belo Horizonte, MG
+      date: January 2021 - May 2022
+      description: Back-end development banking systems written in JavaEE and deployed on WildFly servers within the Azure platform. Development in the customer portal with Angular, as well as in the mobile app with React Native.
+
+    - jobTitle: System Analyst
+      color: red
+      company: "DTI"
+      location: Belo Horizonte, MG
+      date: February 2019 - September 2019
+      description: Chatbot development for the WhatsApp Business platform. Development and implementation of C# .NET microservices deployed on Microsoft Azure.
+
+    - jobTitle: Software Developer
+      color: red
+      company: "HOP"
+      location: Belo Horizonte, MG
+      date: October 2017 - February 2019 | September 2019 - December 2020
+      description: Development and operation of back-end applications with Java Spring Boot deployed on the IBM Cloud. Modeling and maintenance of chatbots oriented both for internal operations and for communication with external audiences. Development and maintenance of front-end web services and Android applications.
+
+    - jobTitle: Intern
+      color: red
+      company: "OneForce"
+      location: Belo Horizonte, MG
+      date: October 2016 - October 2017
+      description: Full-stack ERP development using NodeJS, AngularJS and MongoDB deployed on IBM Bluemix.
+
+    - jobTitle: Scholarship holder
+      color: red
+      company: "UniBH & OneForce"
+      location: Belo Horizonte, MG
+      date: October 2015 - October 2016
+      description: Member of the scientific-technological research team in the areas of natural language processing and automation using Arduino, under the coordination of professors Dr. Moisés Henrique Ramos Pereira and Dr. Felipe Leandro Andrade da Conceição.
+
+    - jobTitle: Intern
+      color: red
+      company: "Rede Minas"
+      location: Belo Horizonte, MG
+      date: December 2014 - September 2015
+      description: Maintenance of hardware and software of business computers.
+
+  education:
+    - courseName: Computer Science - Bachelor's Degree
+      color: red
+      date: August 2013 - August 2017
+      description: "The Computer Science course at UniBH offers a deep theoretical base in computer programming, mathematics and logic, providing the necessary skills to work in the IT area for an indefinite period of time. By consolidating the foundations of Computer Science, the course allows contact with various IT technologies: databases, computer networks, artificial intelligence, compilers, software engineering, and so on."
+
+  skills:
+    - name: Backend Development
+      color: aqua
+      percentage: 90
+      Description: Java SpringBoot & JEE | C# .NET Core | TS AdonisJS
+
+    - name: Artificial Intelligence
+      color: aqua
+      percentage: 75
+      description: Chatbots with IBM Watson and Blip
+
+    - name: Cloud Computing
+      color: aqua
+      percentage: 50
+      description: AWS | IBM Cloud
+
+    - name: Frontend Development
+      color: aqua
+      percentage: 40
+      description: React Native | Angular
+
+  softskills:
+    - name: Curiosity
+      color: aqua
+      percentage: 100
+      #description:
+
+    - name: Team-Work
+      color: aqua
+      percentage: 80
+      #description:
+
+    - name: Communication
+      color: aqua
+      percentage: 75
+      #description:
+
+    - name: Leadership
+      color: aqua
+      percentage: 60
+      #description:
+
+  languages:
+    - name: English
+      color: red
+      percentage: 70
+      #description:
+
+    - name: Portuguese
+      color: lime
+      percentage: 100
+      # description:
+
+  certifications:
+    - certName: Oracle Certified Associate, Java SE 8 Programmer
+      company: Oracle
+      date: April 2023
+      description: An Oracle Certified Associate, Java SE 8 Programmer has demonstrated knowledge of object-oriented concepts, the Java programming language and general knowledge of Java platforms and technologies.
+
+    - certName: IBM Certified Application Developer - Watson V3 Certification
+      company: IBM Professional Certification
+      date: December 2017
+      description: This intermediate level technical professional is an individual who understands concepts essential to the development of applications using IBM Watson AI services. They will have experience using the IBM Cloud and are able to consume IBM Watson AI services in an application. This individual is able to perform these tasks with little to no assistance from product documentation, support or peers.

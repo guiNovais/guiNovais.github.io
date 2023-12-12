@@ -2,6 +2,7 @@
 <script> 
 jQuery(document).ready(function($) {
     var animation = false;
+    var chatbotMode = false;
     var availableCommands = [
         "all",
         "whois",
@@ -17,8 +18,11 @@ jQuery(document).ready(function($) {
         {{ if .Site.Params.exitLocation }} "exit", {{ end }}
         {{ if .Site.Params.misc }}{{ .Site.Params.misc.commandName | default "misc"}},{{end}}
         {{ if not .Site.Params.hideSource }} "source", {{ end }}
+        "chatbot",
         "help",
         ]
+
+    sessionStorage.clear("context")
 
     $("body").terminal(function(command, term) {
 
@@ -187,6 +191,67 @@ jQuery(document).ready(function($) {
             term.echo ("")
         }
 
+        function chatbot (text) {
+
+            if(!text) {
+                term.echo("[[b;white;]Você está agora conversando com o chatbot. Para encerrar, digite 'sair']");
+            }
+              $.ajax({
+                "async": true,
+                "crossDomain": true,
+                "url": "https://api.us-south.assistant.watson.cloud.ibm.com/instances/3da80eb4-dd3a-4bc5-9546-827396802032/v1/workspaces/7e97c98d-381a-4c64-bc50-6f1e0cce5428/message?version=2021-06-14",
+                "method": "POST",
+                "headers": {
+                  "Content-Type": "application/json",
+                  "Authorization": "Basic YXBpa2V5Ok9mS2JEZG9uRWg1VHVaU1RfaHA3RVlHU1d0RkwySHRLWDR6d0hrOF9oZHRC"
+                },
+                "processData": false,
+                "data": JSON.stringify({
+                    input: { text: text || "" },
+                    context: JSON.parse(sessionStorage.getItem("context"))
+                })
+              })
+              .done(function (response) {
+                term.echo();
+                term.echo("[[;greenyellow;]constantino@guilhermeland][[;grey;]:~$]");
+
+                response
+                    .output
+                    .generic
+                    .filter(e => e.response_type === "text")
+                    .forEach(e => term.echo(e.text))
+                
+                response
+                    .output
+                    .generic
+                    .filter(e => e.response_type === "option")
+                    .forEach(e => {
+                        term.echo(e.title)
+                        e.options.forEach(o => {
+                            term.echo("[[;azure;]" + o.value.input.text)
+                        })
+                    })
+
+                response
+                    .output
+                    .generic
+                    .filter(e => e.response_type === "image")
+                    .forEach(e => {
+                        term.echo(e.title)
+                        term.echo(e.description)
+                    })
+
+                term.echo();
+
+                sessionStorage.setItem("context", JSON.stringify(response.context));
+              })
+              .fail(function() {
+                term.echo("Não foi possível se comunicar com o chatbot cortretamente. Tente novamente mais tarde.");
+                sessionStorage.clear("context")
+                chatbotMode = false;
+              });
+        }
+
         function help () {
             term.echo("\n[[b;white;]Available commands:]\n" +
                     "\n" + availableCommands.join(" ")+ "\n") 
@@ -244,69 +309,83 @@ jQuery(document).ready(function($) {
 
         /* Functions End */
         commands = command.split(/[ ]+/);
-        switch(commands[0]) {
-            case "whois":
-                whois();
-                break;
-            case "social":
-                social();
-                break;
-            case "certifications":
-                certifications();
-                break;
-            case "work":
-                work();
-                break;
-            case "education":
-                education();
-                break;
-            case "skills":
-                skills();
-                break;
-            case "softskills":
-                softskills();
-                break;
-            case "languages":
-                languages();
-                break;
-            case "projects":
-                projects();
-                break;
-            case "{{ .Site.Params.misc.commandName | default "misc"}}":
-                misc();
-                break;
-            case "help":
-                help();
-                break;
-            case "source":
-                source();
-                break;
-            case "startx":
-                term.echo("loading ...")
-                loading();
-                setTimeout(function() {window.location = "{{ .Site.Params.startxLocation }}"}, 2000);
-                break;
-            case "exit":
-                term.echo("terminating ... ")
-                loading();
-                setTimeout(function() {window.location = "{{ .Site.Params.exitLocation }}"}, 2000);
-                break;
-            case "all":
-                whois();
-                social();
-                certifications();
-                work();
-                education();
-                skills();
-                softskills();
-                languages();
-                projects();
-                {{ if .Site.Params.misc }} misc(); {{ end }}
-                {{ if not .Site.Params.hideSource }} source(); {{ end }}
-                break;
-            default:
-                term.echo("\nunknown command: " + command + "\n" +
-                          "please type 'help' for a list of available commands\n");
+
+        if (chatbotMode) {
+            if (commands != "sair") {
+                chatbot(commands.join(" "));
+            } else {
+                sessionStorage.clear("context");
+                chatbotMode = false;
+            }
+        } else {
+            switch(commands[0]) {
+                case "whois":
+                    whois();
+                    break;
+                case "social":
+                    social();
+                    break;
+                case "certifications":
+                    certifications();
+                    break;
+                case "work":
+                    work();
+                    break;
+                case "education":
+                    education();
+                    break;
+                case "skills":
+                    skills();
+                    break;
+                case "softskills":
+                    softskills();
+                    break;
+                case "languages":
+                    languages();
+                    break;
+                case "projects":
+                    projects();
+                    break;
+                case "{{ .Site.Params.misc.commandName | default "misc"}}":
+                    misc();
+                    break;
+                case "source":
+                    source();
+                    break;
+                case "startx":
+                    term.echo("loading ...")
+                    loading();
+                    setTimeout(function() {window.location = "{{ .Site.Params.startxLocation }}"}, 2000);
+                    break;
+                case "chatbot":
+                    chatbotMode = true;
+                    chatbot();
+                    break;
+                case "help":
+                    help();
+                    break;
+                case "exit":
+                    term.echo("terminating ... ")
+                    loading();
+                    setTimeout(function() {window.location = "{{ .Site.Params.exitLocation }}"}, 2000);
+                    break;
+                case "all":
+                    whois();
+                    social();
+                    certifications();
+                    work();
+                    education();
+                    skills();
+                    softskills();
+                    languages();
+                    projects();
+                    {{ if .Site.Params.misc }} misc(); {{ end }}
+                    {{ if not .Site.Params.hideSource }} source(); {{ end }}
+                    break;
+                default:
+                    term.echo("\nunknown command: " + command + "\n" +
+                              "please type 'help' for a list of available commands\n");
+            }
         }
     },
 

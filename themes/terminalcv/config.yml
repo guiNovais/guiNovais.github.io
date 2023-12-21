@@ -2,22 +2,22 @@ BaseURL: "https://guilhermenovais.sh"
 title: "Guilherme Novais"
 
 params:
-  description: "Terminal format website"
+  description: "Terminal Site"
   prompt: "guest@guilhermeland"
-  promptColor: yellow
+  promptColor: Yellow
   exitLocation: "about:blank"
   greeting: |
-    Welcome to my website!
-    Type 'help' for a list of available commands
+    Bem-vindo ao meu site!
+    Digite 'ajuda' para ver a lista de comandos disponíveis
 
   whois:
     name: "Guilherme Novais"
-    profession: "Software Developer"
+    profession: "Desenvolvedor de Softwares"
     location: "Belo Horizonte, MG, Brazil"
     email: "guilhermenovais.sh@gmail.com"
     homelink: "https://guilhermenovais.sh/"
     description: |
-      Hey there! I'm a curious soul navigating the fascinating worlds of ideas and exploration. I'm all about uncovering the wonders of technology, diving into the realms of software development and AI, and forever intrigued by what tomorrow's tech holds.
+      Olá! Eu sou um desenvolvedor de softwares apaixonado por transformar linhas de código em soluções inovadoras! Com anos de experiência e um amor infinito pela tecnologia, estou sempre buscando desafios empolgantes para criar produtos que impactem positivamente a vida das pessoas. Meu objetivo é criar sistemas inteligentes, intuitivos e eficientes, mergulhando de cabeça em cada projeto para trazer à vida ideias inovadoras. Vamos juntos explorar o universo da programação e transformar ideias em realidade!
   social:
     - name: "github"
       url: "         https://github.com/guiNovais/"
@@ -27,121 +27,116 @@ params:
       url: "      https://instagram.com/guilhermenovais.sh/"
 
   work:
-    - jobTitle: Systems Development Analyst
-      color: red
+    - jobTitle: Analista Desenvolvedor de Sistemas
+      color: DarkSlateBlue
       company: "Framework Digital"
       location: Belo Horizonte, MG
-      date: May 2022 - Present
-      description: Back-end development banking systems written in C# .NET and Java SpringBoot based framework.
+      date: Maio de 2022 - Atual
+      description: Desenvolvimento de chatbot utilizando Blip e Salesforce, serviço prestado para a Localiza. Desenvolvimento full-stack com C# .NET e Java Spring Boot e SQL Server no Banco Santander.
 
-    - jobTitle: Systems Analyst
-      color: red
-      company: "Montreal M.I"
+    - jobTitle: Analista de Sistemas
+      color: DarkRed
+      company: "M.I. Montreal Informática"
       location: Belo Horizonte, MG
-      date: January 2021 - May 2022
-      description: Back-end development banking systems written in JavaEE and deployed on WildFly servers within the Azure platform. Development in the customer portal with Angular, as well as in the mobile app with React Native.
+      date: janeiro de 2021 - Maio 2022
+      description: Desenvolvimento backend com JavaEE / WildFly, portal do cliente com Angular, e aplicativo móvel com React Native, serviços prestados para o Banco de Desenvolvimento de Minas Gerais (BDMG).
 
-    - jobTitle: System Analyst
-      color: red
+    - jobTitle: Analista de Sistemas
+      color: DeepSkyBlue
       company: "DTI"
       location: Belo Horizonte, MG
-      date: February 2019 - September 2019
-      description: Chatbot development for the WhatsApp Business platform. Development and implementation of C# .NET microservices deployed on Microsoft Azure.
+      date: Fevereiro de 2019 - Setembro de 2019
+      description: Desenvolvimento de chatbot com o IBM Watson Conversation em diversos canais, incluindo WhatsApp Business, para a MRV Engenharia. Tambpem trabalhei com backend C# .NET nesse mesmo cliente.
 
-    - jobTitle: Software Developer
-      color: red
+    - jobTitle: Desenvolvedor de Softwares
+      color: RebeccaPurple
       company: "HOP"
       location: Belo Horizonte, MG
-      date: October 2017 - February 2019 | September 2019 - December 2020
-      description: Development and operation of back-end applications with Java Spring Boot deployed on the IBM Cloud. Modeling and maintenance of chatbots oriented both for internal operations and for communication with external audiences. Development and maintenance of front-end web services and Android applications.
+      date: Outubro de 2017 - Fevereiro de 2019 | Setembro de 2019 - Dezembro de 2020
+      description: Aplicação de soluções com chatbots utilizando IBM Watson Conversation em diversos clientes - FCA, Stihl, Anglo American, Tigre e diversos outros. Vale destacar que atuei nesses assistentes virtuais em todas as etapas dos projetos, desde o planejamento, desenvolvimento, curadoria e relatório de performance, além de integração com APIs externas e integração com sistemas de reconhecimento e síntese de voz. Desenvolvimento e operação de sistemas backend com Java Spring Boot e frontend com Angular.
 
-    - jobTitle: Intern
-      color: red
+    - jobTitle: Estágiário
+      color: SteelBlue
       company: "OneForce"
       location: Belo Horizonte, MG
-      date: October 2016 - October 2017
-      description: Full-stack ERP development using NodeJS, AngularJS and MongoDB deployed on IBM Bluemix.
+      date: Outubro de 2016 - Outubro de 2017
+      description: Desenvolvimento full-stack de sistema ERP através de NodeJS, AngularJS e MongoDB utilizando os serviços da plataforma IBM Bluemix.
 
-    - jobTitle: Scholarship holder
-      color: red
+    - jobTitle: Bolsista de pesquisa / iniciação científica
+      color: YellowGreen
       company: "UniBH & OneForce"
       location: Belo Horizonte, MG
-      date: October 2015 - October 2016
-      description: Member of the scientific-technological research team in the areas of natural language processing and automation using Arduino, under the coordination of professors Dr. Moisés Henrique Ramos Pereira and Dr. Felipe Leandro Andrade da Conceição.
+      date: Outubro de 2015 - Outubro de 2016
+      description: Pesquisa científica / tecnológica nas áreas de processamento de linguagem natural e automação de sistemas embarcados com Arduino, sob a coordenação dos professores Dr. Moisés Henrique Ramos Pereira e Dr. Felipe Leandro Andrade da Conceição.
 
-    - jobTitle: Intern
-      color: red
+    - jobTitle: Estagiário
+      color: Crimson
       company: "Rede Minas"
       location: Belo Horizonte, MG
-      date: December 2014 - September 2015
-      description: Maintenance of hardware and software of business computers.
+      date: Dezembro de 2014 - Setembro de 2015
+      description: Manutenção dos computações e infraestrutura computacional da empresa.
 
   education:
-    - courseName: Computer Science - Bachelor's Degree
-      color: red
-      date: August 2013 - August 2017
-      description: "The Computer Science course at UniBH offers a deep theoretical base in computer programming, mathematics and logic, providing the necessary skills to work in the IT area for an indefinite period of time. By consolidating the foundations of Computer Science, the course allows contact with various IT technologies: databases, computer networks, artificial intelligence, compilers, software engineering, and so on."
+    - courseName: Ciência da Computação - Bacharelado
+      color: Red
+      date: Agosto de 2013 - Agosto de 2017
+      description: "O curso do UniBH tem duração de quatro anos e oferece uma base teórica profunda em Programação de Computadores, Matemática e Lógica. Os conhecimentos básicos discutidos no curso dão segurança aos alunos para que possam se estabelecer na área de TI por tempo indeterminado. Estes fundamentos são conceitos que não se alteram tão rapidamente quanto as tecnologias e “modismos” da informática, que surgem e morrem anualmente. Após a consolidação das bases da Ciência da Computação, o aluno tem contato com as tecnologias de TI (banco de dados, redes de computadores, inteligência artificial, compiladores, engenharia de software etc.). Esta união entre ciência básica e tecnologia, aliada a uma elevada carga de trabalhos práticos extraclasse, formam pessoas capazes de transformar o mercado de trabalho, por meio da geração de novas tecnologias."
 
   skills:
-    - name: Backend Development
-      color: aqua
+    - name: Desenvolvimento Backend
+      color: Brown
       percentage: 90
-      Description: Java SpringBoot & JEE | C# .NET Core | TS AdonisJS
+      Description: Java Spring Boot & JEE | C# .NET Core | TDD | REST | SOAP | JWT
 
-    - name: Artificial Intelligence
-      color: aqua
-      percentage: 75
-      description: Chatbots with IBM Watson and Blip
+    - name: Inteligência Artificial
+      color: Magenta
+      percentage: 85
+      description: IBM Watson | Chatbots | Texto ⇄ Voz | PLN
 
-    - name: Cloud Computing
-      color: aqua
+    - name: Computação em núvem
+      color: Aqua
       percentage: 50
       description: AWS | IBM Cloud
 
-    - name: Frontend Development
-      color: aqua
+    - name: Desenvolvimento Frontend
+      color: LawnGreen
       percentage: 40
       description: React Native | Angular
 
   softskills:
-    - name: Curiosity
-      color: aqua
+    - name: Curiosidade
+      color: Aqua
       percentage: 100
       #description:
 
-    - name: Team-Work
-      color: aqua
+    - name: Trabalho em equipe
+      color: Aqua
       percentage: 80
       #description:
 
-    - name: Communication
-      color: aqua
+    - name: Comunicação
+      color: Aqua
       percentage: 75
       #description:
 
-    - name: Leadership
-      color: aqua
+    - name: Liderança
+      color: Aqua
       percentage: 60
       #description:
 
   languages:
-    - name: English
-      color: red
+    - name: Inglês
+      color: Red
       percentage: 70
       #description:
-
-    - name: Portuguese
-      color: lime
-      percentage: 100
-      # description:
 
   certifications:
     - certName: Oracle Certified Associate, Java SE 8 Programmer
       company: Oracle
       date: April 2023
-      description: An Oracle Certified Associate, Java SE 8 Programmer has demonstrated knowledge of object-oriented concepts, the Java programming language and general knowledge of Java platforms and technologies.
+      description: A certificação Oracle Certified Associate, Java SE 8 Programmer demonstra conhecimento dos conceitos de oritentação a objetos, a linguagem de programação Java e o conhecimento geral sobre as plataformas Java e suas tecnologias.
 
     - certName: IBM Certified Application Developer - Watson V3 Certification
       company: IBM Professional Certification
       date: December 2017
-      description: This intermediate level technical professional is an individual who understands concepts essential to the development of applications using IBM Watson AI services. They will have experience using the IBM Cloud and are able to consume IBM Watson AI services in an application. This individual is able to perform these tasks with little to no assistance from product documentation, support or peers.
+      description: Essa certificação técnica de nível intermediário certifica que o indivíduo entende conceitos essenciais para o desenvolvimento de aplicações utilizando os serviços IBM Watson de Inteligência Artificial. Assegura a experiência no uso da IBM Cloud e a capacidade de consumir serviços IBM Watson IA, capaz de executar tarefas com pouca ou nenhuma ajuda da documentação do produto, do suporte ou de colegas.

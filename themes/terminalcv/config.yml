@@ -1,136 +1,142 @@
-BaseURL: "https://guilhermenovais.sh"
-title: "Guilherme Novais"
+BaseURL: https://guilhermenovais.sh
+title: Guilherme Novais
 
 params:
-  description: "Terminal format website"
-  prompt: "guest@guilhermeland"
+  description: Terminal Curriculum Vitae 
+  prompt: convidado@guilhermenovais.sh
   promptColor: yellow
-  exitLocation: "about:blank"
+  exitLocation: about:blank
   greeting: |
-    Welcome to my website!
-    Type 'help' for a list of available commands
-
+    Bem vindo ao meu curriculo terminal 💻
+    Digite 'help' para ver os comandos disponíveis
   whois:
-    name: "Guilherme Novais"
-    profession: "Software Developer"
-    location: "Belo Horizonte, MG, Brazil"
-    email: "guilhermenovais.sh@gmail.com"
-    homelink: "https://guilhermenovais.sh/"
+    name: Guilherme Novais
+    profession: Desenvolvedor de Softwares
+    location: Belo Horizonte, MG, Brasil
+    email: guilhermenovais.sh@gmail.com
+    homelink: https://guilhermenovais.sh/
     description: |
-      Hey there! I'm a curious soul navigating the fascinating worlds of ideas and exploration. I'm all about uncovering the wonders of technology, diving into the realms of software development and AI, and forever intrigued by what tomorrow's tech holds.
+      Olá! Eu me chamo Guilherme, sou desenvolvedor de softwares fascinado por tecnologia e inovação.
+
+      Estou sempre em busca de uma aventura tecnologica para desbravar, tal qual esse próprio site de apresentação em formato de terminal.
+
+      Sinta-se a vontade para conhecer aqui! Ah, e não se esqueça de depois conversar com o meu chatbot, o Constantino. Garanto que será uma experiência bem agradável 🤖
   social:
-    - name: "github"
-      url: "         https://github.com/guiNovais/"
-    - name: "linkedin"
-      url: "       https://linkedin.com/in/guilhermenovaisdev/"
-    - name: "instagram"
-      url: "      https://instagram.com/guilhermenovais.sh/"
+    - name: github
+      url: https://github.com/guiNovais/
+    - name: linkedin
+      url: https://linkedin.com/in/guilhermenovaisdev/
+    - name: instagram
+      url: https://instagram.com/guilhermenovais.sh/
 
   work:
-    - jobTitle: Systems Development Analyst
+    - jobTitle: Analista de Desenvolvimento de Sistemas
       color: red
-      company: "Framework Digital"
+      company: Framework Digital
       location: Belo Horizonte, MG
-      date: May 2022 - Present
-      description: Back-end development banking systems written in C# .NET and Java SpringBoot based framework.
+      date: Maio de 2022 - Presente
+      description: Atualmente estou alocado dentro do banco Santander, trabalhando com sistemas tanto do antigo Olé Consignado (.NET Core, SQL Server, TFS, Azure, REST, SOAP, Control-M, Dynatrace) quanto com novos sistemas do Santander (Java 17, Spring Boot, Spring Batch, Oracle Database, CloudBees, K8s, OpenShift, SonarQube). Além disso, tive um período alocado na Localiza na qual trabalhei com o desenvolvimento de seu chatbot modelado principalmente com o Blip e utilizando APIs REST.
 
-    - jobTitle: Systems Analyst
+    - jobTitle: Analista de Sistemas
       color: red
-      company: "Montreal M.I"
+      company: Montreal M.I
       location: Belo Horizonte, MG
-      date: January 2021 - May 2022
-      description: Back-end development banking systems written in JavaEE and deployed on WildFly servers within the Azure platform. Development in the customer portal with Angular, as well as in the mobile app with React Native.
+      date: Janeiro de 2021 - Maio de 2022
+      description: Trabalhei alocado no Banco de Desenvolvimento de Minas Gerais, implementando novas funcionalidades tanto no backend (Java 8, Java EE, Wildfly, Azure) como no aplicativo móvel (React Native) e no portal de atendimento do usuário (Angular).
 
-    - jobTitle: System Analyst
+    - jobTitle: Analista de Sistemas
       color: red
-      company: "DTI"
+      company: DTI
       location: Belo Horizonte, MG
-      date: February 2019 - September 2019
-      description: Chatbot development for the WhatsApp Business platform. Development and implementation of C# .NET microservices deployed on Microsoft Azure.
+      date: Fevereiro de 2019 - Setembro de 2019
+      description: Fiquei esse período alocado na MRV Engenharia, aonde trabalhei com seu chatbot público para clientes implementado através do IBM Watson Assistant. Sua interação era realizada através tanto de sua interface web própria como através do WhatsApp. Também trabalhei na remodelagem dos sistemas de cálculo do valor de imóveis (.NET Core, Dapper ORM, MediatR, Azure).
 
-    - jobTitle: Software Developer
+    - jobTitle: Desenvolvedor de Softwares
       color: red
-      company: "HOP"
+      company: HOP
       location: Belo Horizonte, MG
-      date: October 2017 - February 2019 | September 2019 - December 2020
-      description: Development and operation of back-end applications with Java Spring Boot deployed on the IBM Cloud. Modeling and maintenance of chatbots oriented both for internal operations and for communication with external audiences. Development and maintenance of front-end web services and Android applications.
+      date: Outubro de 2017 - Fevereiro de 2019 | Setembro de 2019 - December 2020
+      description: Trabalhei com sistemas backend orientados para suportar chatbots (Java 8, Spring Boot, IBM Watson Assistant, Facebook Messenger), além da modelagem, construção e curadoria de diversos chatbots, tanto internos quanto públicos. Também atuei na operação das aplicações em nuvem com o IBM Cloud.
 
     - jobTitle: Intern
       color: red
-      company: "OneForce"
+      company: OneForce
       location: Belo Horizonte, MG
-      date: October 2016 - October 2017
-      description: Full-stack ERP development using NodeJS, AngularJS and MongoDB deployed on IBM Bluemix.
+      date: Outubro de 2016 - Outubro de 2017
+      description: Trabalhei em um sistema de gerenciamento de recursos para a empresa LB2, com o backend desenvolvido em NodeJS, frontend em AngularJS, banco de dados MongoDB e implantados na nuvem IBM Bluemix.
 
     - jobTitle: Scholarship holder
       color: red
-      company: "UniBH & OneForce"
+      company: UniBH & OneForce
       location: Belo Horizonte, MG
-      date: October 2015 - October 2016
-      description: Member of the scientific-technological research team in the areas of natural language processing and automation using Arduino, under the coordination of professors Dr. Moisés Henrique Ramos Pereira and Dr. Felipe Leandro Andrade da Conceição.
+      date: Outubro de 2015 - Outubro de 2016
+      description: Membro de pesquisa científica-tecnológica na área de processamento de linguagem natural e automação com Arduíno, sob a coordenação dos professores Dr. Moisés Henrique Ramos Pereira e Dr. Felipe Leandro Andrade da Conceição.
 
     - jobTitle: Intern
       color: red
-      company: "Rede Minas"
+      company: Rede Minas
       location: Belo Horizonte, MG
-      date: December 2014 - September 2015
-      description: Maintenance of hardware and software of business computers.
+      date: Dezembro de 2014 - Deze 2015
+      description: Manutenção de hardware e software dos computadores empresariais.
 
   education:
-    - courseName: Computer Science - Bachelor's Degree
+    - courseName: Ciência da Computação - Bacharelado
       color: red
-      date: August 2013 - August 2017
-      description: "The Computer Science course at UniBH offers a deep theoretical base in computer programming, mathematics and logic, providing the necessary skills to work in the IT area for an indefinite period of time. By consolidating the foundations of Computer Science, the course allows contact with various IT technologies: databases, computer networks, artificial intelligence, compilers, software engineering, and so on."
+      date: Agosto de 2013 - Agosto de 2017
+      description: O curso do UniBH oferece uma base teórica profunda em programação de computadores, matemática e lógica. Os conhecimentos abordados no curso oferecem base e segurança para a formação na área de TI por tempo indeterminado. Aqui houve o contato com os principais recursos TI, como banco de dados, redes de computadores, inteligência artificial, compiladores, engenharia de software, entre outros.
 
   skills:
-    - name: Backend Development
+    - name: Desenvolvimento Backend
       color: aqua
       percentage: 90
-      Description: Java SpringBoot & JEE | C# .NET Core | TS AdonisJS
+      description: Java versões 8, 11 e 17 | Spring Boot | Spring Batch | Java EE | C# | .NET Core | TypeScript | AdonisJS
 
-    - name: Artificial Intelligence
+    - name: Operação e Sustentação
+    
+
+    - name: Inteligência Artificial
       color: aqua
       percentage: 75
-      description: Chatbots with IBM Watson and Blip
+      description: Chatbots com IBM Watson e Blip
 
-    - name: Cloud Computing
+    - name: Computação em Nuvem
       color: aqua
       percentage: 50
       description: AWS | IBM Cloud
 
-    - name: Frontend Development
+    - name: Desenvolvimento Frontend
       color: aqua
       percentage: 40
       description: React Native | Angular
 
   softskills:
-    - name: Curiosity
+    - name: Curiosidade
       color: aqua
       percentage: 100
-      #description:
+      description: Sempre estou a procura de novas formas de interagir com tecnologia buscando recursos que fogem do que é rotineiro. Isso me proporciona o contato com vários aspectos das ferramentas de desenvolvimento, seja em questão de linguagem de programação, estratégias de modelagem de sistemas, planejamento e curadoria de assistentes virtuais, etc.
 
-    - name: Team-Work
+    - name: Trabalho em equipe
       color: aqua
       percentage: 80
-      #description:
+      description: Ao planejar e elaborar uma solução, eu busco ao máximo a contribuição e opinião dos meus colegas de trabalho. Acredito que ao passar pela análise crítica de várias pessoas, conseguimos um grande valor em questão de qualidade do produto final. Além disso, eu vejo como os envolvidos se tornam mais engajados e exigentes com a qualidade de todas as entregas.
 
-    - name: Communication
+    - name: Comunicação
       color: aqua
       percentage: 75
-      #description:
+      description: Trabalhar com tecnologia exige a capacidade de se comunicar de maneira bastante assertiva com pessoas de diferentes áreas, seja de negócio, seja técnico. É justamente isso o que permite a elaboração de soluções eficientes, escaláveis e de fácil manutenção.
 
-    - name: Leadership
+    - name: Liderança
       color: aqua
       percentage: 60
-      #description:
+      description: Acredito que liderar exige um grande conhecimento e capacidade de imersão sobre o trabalho de cada membro de uma equipe. Sendo assim, acredito que as minhas características de liderança se encontram orientadas para equipes técnicas e de desenvolvimento, pois é justamente nesse lugar em que eu tenho mais engajamento e conhecimento para direcionar os eforços de cada membro para soluções de alta qualidade.
 
   languages:
-    - name: English
+    - name: Inglês
       color: red
       percentage: 70
       #description:
 
-    - name: Portuguese
+    - name: Português
       color: lime
       percentage: 100
       # description:

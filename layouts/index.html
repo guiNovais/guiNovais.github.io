@@ -15,11 +15,11 @@ jQuery(document).ready(function($) {
         {{ if .Site.Params.projetos }} "projetos", {{ end }}
         {{ if .Site.Params.certificacoes }} "certificacoes", {{ end }}
         {{ if .Site.Params.startxLocation }} "startx", {{ end }}
-        {{ if .Site.Params.exitLocation }} "sair", {{ end }}
         {{ if .Site.Params.misc }}{{ .Site.Params.misc.commandName | default "misc"}},{{end}}
         {{ if not .Site.Params.hideSource }} "source", {{ end }}
         "chatbot",
         "ajuda",
+        {{ if .Site.Params.exitLocation }} "sair", {{ end }}
         ]
 
     sessionStorage.clear("context")

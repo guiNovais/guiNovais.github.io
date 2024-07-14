@@ -6,6 +6,7 @@ params:
   prompt: convidado@guilhermenovais.sh
   promptColor: yellow
   exitLocation: about:blank
+  hidesource: true
   greeting: |
     Bem vindo ao meu curriculo terminal 💻
     Digite 'ajuda' para ver os comandos disponíveis

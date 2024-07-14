@@ -8,8 +8,8 @@ params:
   exitLocation: about:blank
   greeting: |
     Bem vindo ao meu curriculo terminal 💻
-    Digite 'help' para ver os comandos disponíveis
-  whois:
+    Digite 'ajuda' para ver os comandos disponíveis
+  apresentacao:
     name: Guilherme Novais
     profession: Desenvolvedor de Softwares
     location: Belo Horizonte, MG, Brasil
@@ -29,7 +29,7 @@ params:
     - name: instagram
       url: https://instagram.com/guilhermenovais.sh/
 
-  work:
+  trabalho:
     - jobTitle: Analista de Desenvolvimento de Sistemas
       color: red
       company: Framework Digital
@@ -79,13 +79,13 @@ params:
       date: Dezembro de 2014 - Deze 2015
       description: Manutenção de hardware e software dos computadores empresariais.
 
-  education:
+  educacao:
     - courseName: Ciência da Computação - Bacharelado
       color: red
       date: Agosto de 2013 - Agosto de 2017
       description: O curso do UniBH oferece uma base teórica profunda em programação de computadores, matemática e lógica. Os conhecimentos abordados no curso oferecem base e segurança para a formação na área de TI por tempo indeterminado. Aqui houve o contato com os principais recursos TI, como banco de dados, redes de computadores, inteligência artificial, compiladores, engenharia de software, entre outros.
 
-  skills:
+  habilidades:
     - name: Desenvolvimento Backend
       color: aqua
       percentage: 90
@@ -130,7 +130,7 @@ params:
       percentage: 60
       description: Acredito que liderar exige um grande conhecimento e capacidade de imersão sobre o trabalho de cada membro de uma equipe. Sendo assim, acredito que as minhas características de liderança se encontram orientadas para equipes técnicas e de desenvolvimento, pois é justamente nesse lugar em que eu tenho mais engajamento e conhecimento para direcionar os eforços de cada membro para soluções de alta qualidade.
 
-  languages:
+  idiomas:
     - name: Inglês
       color: red
       percentage: 70
@@ -141,7 +141,7 @@ params:
       percentage: 100
       # description:
 
-  certifications:
+  certificacoes:
     - certName: Oracle Certified Associate, Java SE 8 Programmer
       company: Oracle
       date: April 2023

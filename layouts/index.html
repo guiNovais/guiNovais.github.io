@@ -3,23 +3,23 @@
 jQuery(document).ready(function($) {
     var animation = false;
     var chatbotMode = false;
-    var availableCommands = [
-        "all",
-        "whois",
+    var comandosDisponiveis = [
+        "tudo",
+        "apresentacao",
         "social",
-        "work",
-        "education",
-        "skills",
+        "trabalho",
+        "educacao",
+        "habilidades",
         "softskills",
-        "languages",
-        {{ if .Site.Params.projects }} "projects", {{ end }}
-        {{ if .Site.Params.certifications }} "certifications", {{ end }}
+        "idiomas",
+        {{ if .Site.Params.projetos }} "projetos", {{ end }}
+        {{ if .Site.Params.certificacoes }} "certificacoes", {{ end }}
         {{ if .Site.Params.startxLocation }} "startx", {{ end }}
-        {{ if .Site.Params.exitLocation }} "exit", {{ end }}
+        {{ if .Site.Params.exitLocation }} "sair", {{ end }}
         {{ if .Site.Params.misc }}{{ .Site.Params.misc.commandName | default "misc"}},{{end}}
         {{ if not .Site.Params.hideSource }} "source", {{ end }}
         "chatbot",
-        "help",
+        "ajuda",
         ]
 
     sessionStorage.clear("context")
@@ -27,9 +27,9 @@ jQuery(document).ready(function($) {
     $("body").terminal(function(command, term) {
 
         /* Functions to be called by commands */
-        function whois () {
+        function apresentacao () {
             term.echo ("");
-            {{ with .Site.Params.whois }} 
+            {{ with .Site.Params.apresentacao }} 
                 term.echo ("[[b;grey;]Name:]\t\t\t{{ .name }}");
                 term.echo ("[[b;grey;]Profession:]\t\t{{ .profession }}");
                 term.echo ("[[b;grey;]Location:]\t\t{{ .location }}");
@@ -65,9 +65,9 @@ jQuery(document).ready(function($) {
             term.echo("")
         }
 
-        function certifications () {
+        function certificacoes () {
             term.echo("");
-            {{ with .Site.Params.certifications }}
+            {{ with .Site.Params.certificacoes }}
                 {{ range .}}
                     term.echo("[[b;{{ .color | default "grey" }};]{{ .certName }}]");
                 term.echo("{{ .date }}");
@@ -83,9 +83,9 @@ jQuery(document).ready(function($) {
             {{ end }}
         }
 
-        function work () {
+        function trabalho () {
             term.echo("");
-            {{ with .Site.Params.work }}
+            {{ with .Site.Params.trabalho }}
                 {{ range .}}
                     term.echo("[[b;{{ .color | default "grey" }};]{{ .jobTitle }}]");
                     term.echo("{{ .company }}");
@@ -99,9 +99,9 @@ jQuery(document).ready(function($) {
             {{ end }}
         }
 
-        function education () {
+        function educacao () {
             term.echo("");
-            {{ with .Site.Params.education }}
+            {{ with .Site.Params.educacao }}
                 {{ range . }}
                     term.echo("[[b;{{ .color | default "grey" }};]{{ .courseName }}]");
                     term.echo("{{ .date }}");
@@ -114,7 +114,7 @@ jQuery(document).ready(function($) {
             {{ end }}
         }
 
-        function skills () {
+        function habilidades () {
             term.echo(" ");
             {{ with .Site.Params.Skills }}
                 {{ range . }}
@@ -150,9 +150,9 @@ jQuery(document).ready(function($) {
             {{ end }}
         }
 
-        function languages () {
+        function idiomas () {
             term.echo("");
-            {{ with .Site.Params.languages }}
+            {{ with .Site.Params.idiomas }}
                 {{ range . }}
                     var bar_length = Math.round({{ .percentage }} / 10);
                     var bar_filled = Array(bar_length + 1).join("&#9611;");
@@ -168,9 +168,9 @@ jQuery(document).ready(function($) {
             {{ end }}
         }
 
-        function projects () {
+        function projetos () {
             term.echo("");
-            {{ with .Site.Params.projects }}
+            {{ with .Site.Params.projetos }}
                 {{ range .}}
                     term.echo("[[b;{{ .color | default "grey" }};]{{ .title }}]");
                     term.echo("{{ .date }}")
@@ -252,9 +252,9 @@ jQuery(document).ready(function($) {
               });
         }
 
-        function help () {
-            term.echo("\n[[b;white;]Available commands:]\n" +
-                    "\n" + availableCommands.join(" ")+ "\n") 
+        function ajuda () {
+            term.echo("\n[[b;white;]Comandos disponíveis:]\n" +
+                    "\n" + comandosDisponiveis.join(" ")+ "\n") 
         }
 
         function source() {
@@ -319,32 +319,32 @@ jQuery(document).ready(function($) {
             }
         } else {
             switch(commands[0]) {
-                case "whois":
-                    whois();
+                case "apresentacao":
+                    apresentacao();
                     break;
                 case "social":
                     social();
                     break;
-                case "certifications":
-                    certifications();
+                case "certificacoes":
+                    certificacoes();
                     break;
-                case "work":
-                    work();
+                case "trabalho":
+                    trabalho();
                     break;
-                case "education":
-                    education();
+                case "educacao":
+                    educacao();
                     break;
-                case "skills":
-                    skills();
+                case "habilidades":
+                    habilidades();
                     break;
                 case "softskills":
                     softskills();
                     break;
-                case "languages":
-                    languages();
+                case "idiomas":
+                    idiomas();
                     break;
-                case "projects":
-                    projects();
+                case "projetos":
+                    projetos();
                     break;
                 case "{{ .Site.Params.misc.commandName | default "misc"}}":
                     misc();
@@ -361,30 +361,30 @@ jQuery(document).ready(function($) {
                     chatbotMode = true;
                     chatbot();
                     break;
-                case "help":
-                    help();
+                case "ajuda":
+                    ajuda();
                     break;
-                case "exit":
+                case "sair":
                     term.echo("terminating ... ")
                     loading();
                     setTimeout(function() {window.location = "{{ .Site.Params.exitLocation }}"}, 2000);
                     break;
-                case "all":
-                    whois();
+                case "tudo":
+                    apresentacao();
                     social();
-                    certifications();
-                    work();
-                    education();
-                    skills();
+                    certificacoes();
+                    trabalho();
+                    educacao();
+                    habilidades();
                     softskills();
-                    languages();
-                    projects();
+                    idiomas();
+                    projetos();
                     {{ if .Site.Params.misc }} misc(); {{ end }}
                     {{ if not .Site.Params.hideSource }} source(); {{ end }}
                     break;
                 default:
                     term.echo("\nunknown command: " + command + "\n" +
-                              "please type 'help' for a list of available commands\n");
+                              "please type 'ajuda' for a list of available commands\n");
             }
         }
     },
@@ -404,7 +404,7 @@ jQuery(document).ready(function($) {
             }
         },
         autocompleteMenu: true,
-        completion: availableCommands
+        completion: comandosDisponiveis
     });
 });
 </script>

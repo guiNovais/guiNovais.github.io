@@ -28,11 +28,6 @@ const config = {
             "info": ["use projects command to see my projects"]
         },
         {
-            "title": "blogs",
-            "description": "to see my recent blogs",
-            "info": ["use blogs command to see my recent blogs"]
-        },
-        {
             "title": "contact",
             "description": "to enquire about my services",
             "info": ["use enquire command to enquire about my services"]
@@ -56,11 +51,6 @@ const config = {
             "title": "github",
             "description": "to see my github stats",
             "info": ["use github command to see my github stats"]
-        },
-        {
-            "title": "contributors",
-            "description": "to see all the contributors",
-            "info": ["use contributors command to see all the contributors"]
         },
         {
             "title": "download",
@@ -99,122 +89,90 @@ const config = {
         }
     ],
     "terminal": {
-        "user": "$Sidharth_Sethi",
+        "user": "$Guilherme_Novais",
         "host": "sudo",
         "path": "~/guest"
     },
-    "blogs": [
-        {
-            "site": "Medium",
-            "url": "https://medium.com/feed/@sidharth.sherry"
-        }
-    ],
     "cheer": {
         "responseArray": [
-            "Thank you! It makes my day😊😊😊",
-            "It is great to hear that way!😁😁😁",
-            "I would love to take credit😂😂😂",
-            "That's so good to hear! I'm glad😍😍😍"
+            "Thanks so much for considering my portfolio! 📚 I'm grateful for your interest",
+            "Appreciate your time in reviewing my portfolio - thank you again! 😊",
+            "Thanks for looking at my portfolio - I hope it showcases my work well! 🎨",
+            "Wishing you all the best with your career search! 🌟 Thank you for considering my portfolio as part of it",
+            "Thank you for taking a look at my portfolio - I'm thrilled that you're interested! 😊",
         ]
     },
-    "about": "🎓 Aspiring software engineer with strong foundation in computer science and engineering, gained through BE degree program and hands-on experience with various technologies. (Graduating July 2024) \n 🌇 Proficient in MERN stack, data structures and algorithms, SQL, and Google Cloud Platform. Demonstrated expertise in these technologies through successful projects and 300+ day badge on LeetCode. \n 📚 Active member of tech community, serving as lead for multiple organizations including GDSC, CodeChef Chapter, and Algoders Community. Contributed to growth and success of these organizations through leadership and technical skills. \n 💻 Constantly seeking opportunities to grow and improve skills, with long-term goal of becoming a software development engineer. As a Google Venkat Scholar, demonstrated commitment to excellence and potential to succeed in tech industry.",
+    "about": "Experienced professional developing and supporting systems, currently allocated at Santander Brazil. Worked on chatbot projects and digital solutions for companies such as Localiza, BDMG, MRV and Anglo American. Have large knowledge on technologies such as Java, C# .NET Core, SQL/NoSQL databases and cloud platforms (AWS, Azure, IBM Cloud). Certified as AWS Certified Cloud Practitioner, Oracle Certified Associate, Java SE 8 Programmer and IBM Certified Application Developer - Watson V3.",
     "social": [
         {
             "title": "Github",
-            "link": "https://github.com/techspiritss"
+            "link": "https://github.com/guiNovais"
         },
         {
             "title": "LinkedIn",
-            "link": "https://www.linkedin.com/in/sidharthsethiss",
-            "connections": "500+"
+            "link": "https://www.linkedin.com/in/guilhermenovaisdev",
         },
         {
-            "title": "LeetCode",
-            "link": "https://leetcode.com/techspiritss"
-        },
-        {
-            "title": "Codechef",
-            "link": "https://www.codechef.com/users/techspiritss",
-            "rating": "1670",
-            "rank": "22,497"
+            "title": "Instagram",
+            "link:": "https://www.instagram.com/guilhermenovais.sh/"
         }
     ],
     "projects": [
         {
-            "title": "Mood Messenger",
-            "link": "https://github.com/TechSpiritSS/Mood-Messenger",
-            "description": "Mood Messenger is a real-time chat application built using Node.js, React.js, and Cloud SQL. It allows users to sign in with their Google account, initiate chats with other registered users based on their email, send messages, and view previous chats."
+            "title": "RadarPet",
+            "link": "https://github.com/guiNovais/radarpet-api",
+            "description": "A project to assist people who have lost their pets to meet them up through a free digital platform<br/><br/>🚧 It is currently a work in progress 🚧"
         },
-        {
-            "title": "PregChat",
-            "link": "https://github.com/TechSpiritSS/PregChat_Dialogflow",
-            "description": "PregChat is a chatbot designed to help expecting mothers access important information about their pregnancy in a simple, accessible and interactive way. Our chatbot is powered by Dialogflow, a Google Cloud-based natural language processing platform. With PregChat, mothers can easily ask about their symptoms and receive information regarding medical emergencies, first aid, medications, and exercises. PregChat aims to provide support and education to mothers in need, ultimately improving the health outcomes for both mother and child."
-        },
-        {
-            "title": "S Movies",
-            "link": "https://github.com/TechSpiritSS/S-Movies",
-            "description": "This is a full fledged movie web app with profile and recommendations system. I am using ESLint configurations for clean code."
-        },
-        {
-            "title": "MyChabi",
-            "link": "https://techspiritss.github.io/MyChabi/",
-            "description": "MyChabi is a web application to help you out with your passwords"
-        },
-        {
-            "title": "Task C++",
-            "link": "https://github.com/TechSpiritSS/Task-C-",
-            "description": "A command-line based task management application"
-        },
-        {
-            "title": "Notes Insight",
-            "link": "https://mohityadav0903.github.io/Notes-Insight",
-            "description": "A note taking app for visually weak and elderly who aren't comfortable with Modern UI"
-        },
-        {
-            "title": "BigINT Library",
-            "link": "https://github.com/TechSpiritSS/bigInt.git",
-            "description": "This is my own C Library for BigINT made from scratch and it supports 2700 digits"
-        },
-        {
-            "title": "50 Days of Web",
-            "link": "https://techspiritss.github.io/50-Days-50-Projects-Web-Dev/",
-            "description": "50 Web Apps made over the period of 50 days for learning purpose"
-        },
-        {
-            "title": "Covid Vaccination Slot",
-            "link": "https://github.com/TechSpiritSS/Covid-Vaccine",
-            "description": "This Python Program informs about the available Covid vaccine slots at your pin code according to your age group"
-        }
     ],
     "contact": {
-        "email": "techspiritss@duck.com"
+        "email": "guilhermenovais.sh@gmail.com"
     },
     "experience": [
         {
-            "title": "SDE Intern at Quaterstack Technologies",
-            "description": "▪️ Improved performance and maintainability of client-team management application, Redwing, through refactoring of static code into dynamic function calls and reduction of team page code by 70%. \n ▪️ Identified and fixed drag event bug in Nodle Project that caused dramatic increase in CPU utilization (from 7% to 73% with a single mouse drag on flowchart area). \n ▪️ Resolved complex SVG scaling issue in Anatomy-Mapper Project, ensuring accuracy and reliability of visualization."
+            "title": "Systems Development Analyst | Framework Digital",
+            "description": "Responsible for the development and support of systems, allocated at Santander Brazil. Also responsible for the maintenance and development of Chatbot oriented to Localiza customers."
         },
         {
-            "title": "React Developer at EQ Soft Solutions",
-            "description": "▪️ Acquired a strong foundation in ReactJS, including in-depth knowledge of key concepts such as routing, reducer, and Axios. \n ▪️ Demonstrated the ability to effectively apply ReactJS principles and techniques in projects and assignments. \n ▪️ Developed a solid understanding of the ReactJS ecosystem, including popular libraries and tools. \n ▪️ Demonstrated adaptability and a willingness to continuously learn and stay up-to-date with developments in the ReactJS field."
-        }
+            "title": "Systems Analyst | Montreal M.I",
+            "description": "Allocated at Banco de Desenvolvimento de Minas Gerais (BDMG), implemented new features on the company’s backend, mobile application and user service portal."
+        },
+        {
+            "title": "Software Developer | HOP",
+            "description": "Developed chatbots and all the assets needed for its operation, both by text and audio messages, for customers such as Anglo American, Stihl and Tigre."
+        },
+        {
+            "title": "Systems Analyst | DTI",
+            "description": "Allocated at MRV Engenharia, acted on the development of new features and new communication channels of the company's chatbot such as Facebook Messenger and WhatsApp. He was also responsible for remodeling the value calculation systems of real estate assets."
+        },
     ],
     "skills": [
         {
-            "title": "Technical skills are: ",
-            "description": "C++, C, MySQL, Linux, ReactJS, NodeJS, MongoDB, JSON, DSA, Google Cloud Platform, ExpressJS, VueJS, Redux, Material UI, Bootstrap, Tailwind"
+            "title": "Programming",
+            "description": "Java 8, 11 and 17, Spring Boot, Spring Batch, JavaEE, JPA, Lombok, C# .NET Core, Entity Framework, Dapper, MediatR, REST, SOAP, SOLID, TDD, Python, Jupyter Notebook, Angular, ReactNative, Node, SonarQube, Git"
         },
         {
-            "title": "Other Skills are:",
-            "description": "Problem Solving, Team Leadership, Community Management, Team Building"
-        }
+            "title": "Databases",
+            "description": "SQL Server, Oracle, PostgreSQL, MongoDB, SQLite"
+        },
+        {
+            "title": "Cloud Platforms",
+            "description": "AWS, Azure, IBM Cloud"
+        },
+        {
+            "title": "Artificial Intelligence",
+            "description": "IBM Watson, Watson Assistant, Watson Discovery, Blip, STT, TTS"
+        },
+        {
+            "title": "Other skills",
+            "description": "Linux, BMC Control-M, Dynatrace, Citrix, CloudBees, OpenShift"
+        },
     ],
     "neofetch": {
-        "name": "Sidharth Sethi",
-        "title": "MERN Developer",
-        "skills": "Frontend, Backend, Cloud",
+        "name": "Guilherme Novais",
+        "title": "Software Developer",
+        "skills": "Backend, Artificial Intelligence, Cloud Computing",
         "shell": "zsh",
-        "languages": "Javascript, C++, HTML/CSS, SQL"
+        "languages": "Java, C#, Python, JavaScript, SQL"
     },
 }
 export default config

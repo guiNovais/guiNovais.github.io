@@ -38,7 +38,7 @@ import {
 
 const app = document.querySelector("#app");
 let delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-const resumeUrl = "https://drive.google.com/u/0/uc?id=1J8QGMreVTsC-K-d5bpKV1BVNXxrCUYQa&export=download";
+const resumeUrl = "https://p-def3.pcloud.com/D4ZQ90w1GZBhH95eZZZRW8hXkZ2ZZP3RZkZDjxZUYZLLZ7QZC6a55ZdI7GO6ACRcmmme0aYQfUqSq9josk/Resume.pdf";
 
 //Defining the functions
 function neofetch() {
@@ -51,7 +51,7 @@ function neofetch() {
 
     const fimg = document.createElement("div");
     fimg.classList.add("fetch-img-container");
-    fimg.innerHTML = "<img class='fetch-img' src='js.png' />";
+    fimg.innerHTML = "<img class='fetch-img' src='profile.png' />";
 
     const info = document.createElement("div");
     info.classList.add("info");
@@ -166,7 +166,7 @@ async function getInputValue(history, remove = false, cmd = undefined) {
                          createText(`Number of following: ${following}`);
                     }
                     if (item.title == "LinkedIn") {
-                         createText(`Connections : 500+`);
+                         createText(`Connections : 200+`);
                     }
                     if (item.title == "LeetCode") {
                          createText(`Problems Solved: ${totalSolved}`);
@@ -197,32 +197,6 @@ async function getInputValue(history, remove = false, cmd = undefined) {
                     `<a href=${item.link} target="_blank">${item.title}</a> - ${item.description}`, false
                 );
             });
-            break;
-        case "blogs":
-            trueValue(value);
-            await createText("Recent Blogs:");
-            // Hashnode Feed URL: https://username.hashnode.dev/rss.xml
-            // Dev.to Feed URL: https://dev.to/feed/username
-            // Medium Feed URL: https://medium.com/feed/@username
-            // TODO: Insert your Medium/Dev/Hashnode or any blog feed URL below
-            userBlogs.forEach(async (blog) => {
-                createText(`${blog.site}: `);
-                blog.items.forEach((item, index) => {
-                    createText(
-                        `<a href="${item.link}" target="_blank">${index + 1}. ${item.title
-                        }</a>`, false
-                    );
-                });
-            });
-            break;
-        case "contributors":
-            trueValue(value);
-            contributors.forEach((user) => {
-                createText(
-                    `- <a href=${user.userProfile} target="_blank">${user.username}</a>`, false
-                );
-            });
-            await createText(`- Thanks to all the contributors 💖`);
             break;
         case "experience":
             trueValue(value);

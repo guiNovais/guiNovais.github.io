@@ -75,7 +75,7 @@ const getIPDetails = async () => {
 const getRepo = async () => {
     try {
         const response = await fetch(
-            "https://api.github.com/users/TechSpiritSS/repos"
+            "https://api.github.com/users/guiNovais/repos"
         )
             .then((response) => response.json())
             .then((data) => {

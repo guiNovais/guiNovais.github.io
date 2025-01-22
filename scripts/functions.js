@@ -38,7 +38,7 @@ import {
 
 const app = document.querySelector("#app");
 let delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-const resumeUrl = "https://p-def3.pcloud.com/D4ZQ90w1GZBhH95eZZZRW8hXkZ2ZZP3RZkZDjxZUYZLLZ7QZC6a55ZdI7GO6ACRcmmme0aYQfUqSq9josk/Resume.pdf";
+const resumeUrl = "https://p-def2.pcloud.com/D4ZCStkLvZNpWCUh7ZZZNQ81XkZ1ZZH5LZXZSguZIVZEYZMQZvNbF5ZkVHJUTYfNwFXpH2lpwKN8bdBX0Q7/Curr%C3%ADculo.pdf?page=hsn";
 
 //Defining the functions
 function neofetch() {

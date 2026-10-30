@@ -1,0 +1,95 @@
+profile:
+  name: Guilherme Novais
+  headline: Desenvolvedor backend em transição
+  summary: >-
+    Desenvolvedor backend em transição, com 9 anos de experiência em aplicações Java,
+    sistemas distribuídos e plataformas financeiras. Atuação no desenvolvimento de APIs e
+    integrações, tanto em arquiteturas tradicionais como em arquiteturas assíncronas.
+    Aplicação de práticas de observabilidade e qualidade de software. Experiência em empresas
+    do setor financeiro, como BDMG, Santander e Inter, além do uso de computação em nuvem e
+    automação do ciclo de desenvolvimento. Aplicação de IA no desenvolvimento de softwares
+    através das definições OpenSpec e conexões MCP.
+  location: Belo Horizonte, MG, Brasil
+  email: guilhermenovais.sh@gmail.com
+  phone: +55 31 99477-0225
+  links:
+    linkedin: https://linkedin.com/in/guilhermenovaisdev/
+    website: https://guilhermenovais.sh/
+
+experience:
+  - company: Inter
+    role: Software Developer Analyst III
+    period: Agosto de 2025 – Outubro de 2026
+    highlights:
+      - Implementação de motores de meio de pagamentos em arquitetura assíncrona por meio do Axon Framework. Aplicação de event sourcing, CQRS, DDD e controle de requisições idempotentes.
+      - Desenvolvimento de interfaces SDUI no Super App Inter.
+      - Desenvolvimento de softwares com o uso de IA através do modelo OpenSpec. Otimização de modelos a fim de promover o melhor custo-benefício dos recursos do Cursor IDE para cada etapa do ciclo de desenvolvimento.
+      - Adoção de skills e MCPs de diversas ferramentas, como Figma, Miro, New Relic, Grafana e Slack, durante o ciclo de desenvolvimento, promovendo contextualização, identificação de features ou bugs, planejamento, implementação, observabilidade e documentação.
+
+  - company: Framework Digital
+    role: Analista de Desenvolvimento de Sistemas
+    period: Maio de 2022 – Agosto de 2025
+    highlights:
+      - Projeto, desenvolvimento e realização de cobertura de testes de sistemas RESTful usando Java / Spring Boot, seguindo os princípios SOLID e arquitetura hexagonal.
+      - Implementação de novos recursos com alta cobertura de código (JaCoCo, SonarQube) garantindo a conformidade com as melhores práticas.
+      - Correção de bugs críticos em sistemas legados de processamento de contratos de crédito consignado, garantindo conformidade, segurança e evitando interrupções da operação.
+      - Sustentação de serviços de operações de crédito consignado.
+      - Aprimoramento de chatbot construído sob a plataforma Blip e implementação de novas regras de conversação.
+      - Migração de funcionalidades de chatbot da plataforma Blip para o Salesforce, preservando integrações de API externa e fluxo de diálogo.
+      - Aprimoramento de recursos do chatbot, garantindo um atendimento ao cliente fluido em todas as operações.
+
+  - company: Montreal M.I
+    role: Analista de sistemas
+    period: Janeiro de 2021 – Maio de 2022
+    highlights:
+      - Desenvolvimento de novos recursos para o sistema de backend baseado em JEE, com foco em escalabilidade e manutenção.
+      - Aplicação de novas funcionalidades em portal web desenvolvido em Angular para integração com assistente virtual, melhorando a experiência do usuário final.
+      - Implementação de camada de segurança através de biometria facial.
+      - Aplicação de testes unitários e de integração (JUnit) para aumentar a cobertura e a confiabilidade do código.
+
+  - company: Hop AI
+    role: Desenvolvedor de software
+    periods:
+      - Setembro de 2019 – Dezembro de 2020
+      - Outubro de 2017 – Fevereiro de 2019
+    highlights:
+      - Planejamento, desenvolvimento e aplicação de ponta a ponta de chatbots orientados por IA (IBM Watson) para clientes como FCA, Tigre, STIHL e Anglo American.
+      - Projeto de fluxos de conversação e modelos de NLP treinados (reconhecimento de Intents / Entities).
+      - Construção de sistemas backend com Spring Boot para realizar integrações de APIs dos clientes.
+      - Chatbots assistidos por voz (Watson Text to Speech / Watson Speech to Text).
+      - Análise e aprimoramento do desempenho dos chatbots através de auditoria minuciosa de milhares de conversas para assegurar a experiência do usuário completa e funcional.
+      - Produção de relatórios de análise de performance da identificação de Intents (Precision / Recall / F1), garantindo valores de assertividade acima de 85% nesse último indicador.
+
+  - company: dti digital
+    role: Analista de sistemas
+    period: Fevereiro de 2019 – Setembro de 2019
+    highlights:
+      - Transformação digital de sistema de acompanhamento de construções civis da MRV Engenharia por meio do IBM Watson Conversation, expandindo o canal de comunicação para o WhatsApp.
+      - Desenvolvimento e implementação de sistemas baseados em .NET Core, permitindo consulta de precificação de imóveis em tempo real.
+
+education:
+  - institution: Centro Universitário de Belo Horizonte | UniBH
+    degree: Bacharel em Ciência da Computação
+    period: 2013 – 2017
+
+certifications:
+  - name: AWS Certified Cloud Practitioner | CLF-C02
+    period: Agosto de 2024
+  - name: Oracle Certified Associate, Java SE 8 Programmer | 1Z0-808
+    period: Abril de 2023
+  - name: IBM Certified Application Developer | Watson V3 Certification
+    period: Dezembro de 2017
+
+skills:
+  - category: Desenvolvimento Backend
+    items: [Java LTS das versões 8 a 25, Axon Framework, Apache Kafka, Server-Sent Events / SSE, Arquitetura Zero-Release / SDUI, Micronaut, Spring Boot, Spring Batch, Spring Security, JWT, JEE, JUnit, JaCoCo, Mockito, Selenium, Gherkin / Cucumber, SonarQube, Swagger Codegen, C#, .NET Core, NUnit, Python, Jupyter Notebook]
+  - category: Desenvolvimento Frontend e Mobile
+    items: [React Native, Angular, TypeScript, JavaScript]
+  - category: Computação em Nuvem e DevOps
+    items: [AWS, IaC, Kubernetes, k9s, OpenTelemetry, Grafana, Argo CD, Azure, ITSM Service Now, IBM Cloud, IBM Cloud Continuous Delivery]
+  - category: IA / NLP e Chatbots
+    items: [Spec-Driven Development / SDD, OpenSpec skills, MCP, Cursor IDE, IBM Watson, Blip, Einstein Bots]
+  - category: Bancos de dados e ORMs
+    items: [SQL Server, PostgreSQL, Oracle Database, MongoDB, Redis / Valkey, Elasticsearch, SQLite, H2, JPA / Hibernate, Entity Framework, Dapper, LucidORM]
+  - category: Práticas de Desenvolvimento
+    items: [SAGA Pattern, Arquitetura Hexagonal / Ports and Adapters, CQRS, Event Sourcing, Idempotência, DDD, TDD, SOLID, APIs RESTful, SOAP, Git Flow, SemVer]

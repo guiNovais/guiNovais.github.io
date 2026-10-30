@@ -1,12 +1,12 @@
-# main links
+# Navegação principal do portfólio
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Início"
+    url: /
+  - title: "Experiência"
+    url: /#experiencia-profissional
+  - title: "Educação"
+    url: /#educacao
+  - title: "Certificações"
+    url: /#certificacoes
+  - title: "Habilidades"
+    url: /#habilidades-tecnicas

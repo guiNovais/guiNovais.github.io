@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Avatar genérico</title>
+  <desc id="desc">Ilustração abstrata de uma pessoa</desc>
+  <circle cx="128" cy="128" r="128" fill="#d9e6e8"/>
+  <circle cx="128" cy="91" r="45" fill="#47727a"/>
+  <path d="M49 224c11-48 42-73 79-73s68 25 79 73" fill="#47727a"/>
+</svg>

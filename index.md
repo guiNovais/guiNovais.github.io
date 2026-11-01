@@ -35,9 +35,7 @@ author_profile: true
     {% if experience.period %}<time datetime="{{ experience.period }}">{{ experience.period }}</time>
     {% else %}{% for period in experience.periods %}<time datetime="{{ period }}">{{ period }}</time>{% unless forloop.last %}; {% endunless %}{% endfor %}{% endif %}
   </p>
-  <ul>
-    {% for item in experience.highlights %}<li>{{ item }}</li>{% endfor %}
-  </ul>
+  {{ experience.highlights | markdownify }}
 </article>
 {% endfor %}
 

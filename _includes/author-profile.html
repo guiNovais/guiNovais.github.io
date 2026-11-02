@@ -33,6 +33,14 @@
         </li>
       {% endif %}
 
+      {% if author.whatsapp.url %}
+        <li>
+          <a href="{{ author.whatsapp.url }}" rel="nofollow noopener noreferrer me" itemprop="sameAs">
+            <i class="{{ author.whatsapp.icon | default: 'fab fa-fw fa-whatsapp' }}" aria-hidden="true"></i><span class="label">{{ author.whatsapp.label | default: "WhatsApp" }}</span>
+          </a>
+        </li>
+      {% endif %}
+
       {% if author.links %}
         {% for link in author.links %}
           {% if link.label and link.url %}

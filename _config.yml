@@ -129,6 +129,9 @@ author:
     - label: "Telefone"
       icon: "fas fa-fw fa-phone"
       url: "tel:+5531994770225"
+    - label: WhatsApp
+      icon: "fab fa-fw fa-whatsapp"
+      url: "https://wa.me/5531994770225"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://guilhermenovais.sh/"

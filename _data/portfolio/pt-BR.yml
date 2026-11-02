@@ -1,24 +1,24 @@
 profile:
   name: Guilherme Novais
-  headline: Desenvolvedor backend em transição
+  headline: Desenvolvedor Backend
   # Linhas em branco separam parágrafos; Markdown/Kramdown aceita títulos, listas,
   # tabelas, citações, imagens, notas de rodapé, blocos de código e classes .notice/.btn.
   summary: |-
-    Lorem ipsum dolor sit amet, **negrito**, *itálico*, _ênfase_ e [link](https://exemplo.com) convivem em uma narrativa editorial temporária.
+    ## Bem-vindo à minha landing page! 👋
 
-    ## Título provisório
+    Me chamo Guilherme Novais, mas pode me chamar de Gui.
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta, nisl at luctus posuere, arcu justo consequat nisi, vitae tempor lorem sem vitae erat.
+    Criei esta página para me apresentar de forma mais completa do que um currículo
+    tradicional, dando espaço para contar com mais detalhes a minha trajetória
+    profissional.
 
-    - Lorem ipsum dolor sit amet
-    - Consectetur adipiscing elit
+    O conteúdo aqui foi pensado para ser consumido tanto por pessoas e recrutadores
+    da área de TI, quanto por ferramentas de IA e coletores de dados 🧑‍💻🤖
 
-    > Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Além disso, boa parte deste conteúdo foi gerada com o auxílio do
+    [OpenSpec](https://openspec.dev/) dentro do [Codex](https://openai.com/pt-BR/codex/),
+    utilizando créditos do plano [ChatGPT Go](https://chatgpt.com/pricing/).
 
-    | Campo | Exemplo |
-    | --- | --- |
-    | Texto | Lorem ipsum |
-    | Estado | Temporário |
   location: Belo Horizonte, MG, Brasil
   email: guilhermenovais.sh@gmail.com
   phone: +55 31 99477-0225
@@ -29,49 +29,214 @@ profile:
 experience:
   - company: Inter
     role: Software Developer Analyst III
-    period: Agosto de 2025 – Outubro de 2026
+    period: Agosto de 2025 – Presente
     highlights: |-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae lorem sed arcu pharetra aliquet, sed posuere nibh tincidunt.
+      Tive a oportunidade de ingressar no Inter como desenvolvedor sênior, sendo esta
+      a primeira vez atuando como colaborador efetivo em uma instituição financeira,
+      promovendo soluções voltadas diretamente ao negócio.
 
-      Praesent commodo, ipsum at cursus tincidunt, lorem justo vulputate neque, vitae feugiat erat nulla sed massa. Donec consequat tempor lorem.
+      Logo no início, passei a atuar com Server-Driven UI (SDUI), conceito que traz
+      grande flexibilidade à evolução de interfaces e viabiliza entregas com menor
+      acoplamento a releases de frontend. Também foi nesse momento que tive meu
+      primeiro contato estruturado com ferramentas de IA generativa, as quais fomos
+      incentivados a explorar desde o início.
+
+      Atuei na reestruturação do serviço de definição de meios de pagamento da empresa.
+      A proposta era migrar de um fluxo síncrono tradicional para um modelo assíncrono
+      orientado à experiência do usuário: os diferentes meios de pagamento eram
+      apresentados à medida que sua elegibilidade era avaliada em paralelo. Para isso,
+      adotamos uma abordagem baseada no padrão SAGA.
+
+      Utilizamos o Axon Framework como base e exploramos conceitos como
+      Command Query Responsibility Segregation (CQRS), Event Sourcing e Domain-Driven
+      Design (DDD). Como infraestrutura assíncrona, trabalhamos com Apache Kafka e
+      AWS SQS. Para entregar o progresso e o resultado dessas operações em tempo real
+      ao usuário, implementamos endpoints com Server-Sent Events (SSE).
+
+      Com a consolidação do uso de IA generativa no dia a dia, buscamos formas mais
+      eficazes de aplicá-la ao desenvolvimento. Adotamos uma arquitetura própria
+      inspirada em Spec-Driven Development (SDD), com etapas bem definidas de
+      exploração, especificação, implementação e revisão, obtendo resultados bastante
+      satisfatórios com essa abordagem.
+
+      > ## Principais técnicas e ferramentas
+      - Java 21 e 25
+      - SDUI (Server-Driven UI)
+      - Arquitetura SAGA
+      - Axon Framework
+      - CQRS
+      - Event Sourcing
+      - DDD (Domain-Driven Design)
+      - Idempotência
+      - IaC (Infrastructure as Code)
+      - HTTP SSE (Server-Sent Events)
+      - Apache Kafka
+      - AWS SQS
+      - Arquitetura de microsserviços
+      - Micronaut
+      - Spec-Driven Development (SDD)
+      - OpenSpec
+      - MCP (Model Context Protocol)
+      - SonarQube
+      - JaCoCo
+      - Grafana
 
   - company: Framework Digital
     role: Analista de Desenvolvimento de Sistemas
     period: Maio de 2022 – Agosto de 2025
     highlights: |-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat, nisl eget luctus luctus, lectus erat tincidunt justo, vitae feugiat lorem ipsum vel arcu.
+      Na Framework Digital, retomei o trabalho com chatbots para a Localiza, utilizando
+      a plataforma Blip (da Take). Diferente de abordagens puramente em árvore, o Blip
+      permitia a construção de fluxos conversacionais em formato de grafo, com integrações
+      via WhatsApp.
 
-      Curabitur finibus, neque sed tincidunt consequat, lorem sapien consequat mi, sit amet consequat purus ipsum in erat. Sed posuere tempor lorem.
+      Em seguida, atuei na F1rst, braço tecnológico do Banco Santander, em um dos maiores
+      desafios da época: a incorporação das carteiras de crédito consignado da Olé Consignado,
+      adquirida pelo Santander. Foi necessário migrar clientes e dados entre ecossistemas
+      distintos, atuando em paralelo nos sistemas legados em .NET Framework da Olé Consignado
+      e nas aplicações do Santander, baseadas em seus frameworks próprios construídos sobre
+      Spring Boot.
+
+      Por fim, integrei um projeto de Supply Chain para a VLI, empresa de logística do grupo
+      Vale, com foco na automação e no controle dos silos do terminal portuário TIPLAM.
+      Nesse projeto, tive a oportunidade de aprofundar meus conhecimentos em Arquitetura
+      Hexagonal (Ports & Adapters), seguindo fielmente o padrão já adotado pela solução.
+
+      > ## Principais técnicas e ferramentas
+      - C#
+      - .NET Framework
+      - Java 11 / 17
+      - Spring Boot
+      - JPA / Hibernate
+      - SQL Server
+      - Web Services
+      - APIs RESTful
+      - SOAP / WSDL
+      - BMC Control-M
+      - ServiceNow
+      - Jira
+      - OpenText ALM Octane
+      - Grafana
+      - Arquitetura Hexagonal (Ports & Adapters)
+      - SonarQube
+      - JaCoCo
 
   - company: Montreal M.I
-    role: Analista de sistemas
+    role: Analista de Sistemas
     period: Janeiro de 2021 – Maio de 2022
     highlights: |-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean volutpat, mauris at feugiat pretium, libero lacus porta nibh, sed fermentum justo lorem vitae magna.
+      Durante a pandemia de COVID-19, tive a oportunidade de atuar no meu primeiro projeto
+      direto para uma instituição financeira: o Banco de Desenvolvimento de Minas Gerais
+      (BDMG), por meio da Montreal M.I.
 
-      Nunc vulputate, lorem sed facilisis feugiat, erat sem consequat neque, at tincidunt justo arcu vitae nulla. Integer tempor lorem.
+      Nesse projeto, participei de ponta a ponta da evolução dos sistemas do banco,
+      implementando novas funcionalidades que abrangiam desde a modelagem de dados até
+      o backend e as interfaces com Angular e React Native.
+
+      > ## Principais técnicas e ferramentas
+      - Java 8
+      - Java EE (JEE)
+      - JPA / Hibernate
+      - JUnit
+      - APIs REST
+      - SQL Server
+      - Angular
+      - SonarQube
+      - JaCoCo
+      - Web Services
 
   - company: Hop AI
-    role: Desenvolvedor de software
+    role: Desenvolvedor de Software
     periods:
       - Setembro de 2019 – Dezembro de 2020
-      - Outubro de 2017 – Fevereiro de 2019
     highlights: |-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat, massa vitae tincidunt vulputate, erat mauris posuere magna, quis pulvinar lorem justo sed erat.
+      Ao final de 2019, retornei à Hop AI, empresa especializada em soluções com Inteligência
+      Artificial e parceira da IBM. Fui alocado no projeto da Anglo American, com maior
+      complexidade em relação aos anteriores: um chatbot com capacidade de interação por voz,
+      voltado a operar em ambientes com alto nível de ruído, típicos de uma mina a céu aberto.
 
-      Aliquam erat volutpat. Suspendisse potenti, sed facilisis neque vitae risus consequat, ut tempor lorem porttitor.
+      Para garantir a correta compreensão da fala dos operadores, trabalhei fortemente com
+      os serviços IBM Watson Speech to Text e IBM Watson Text to Speech, além de adaptar o
+      Watson Assistant ao vocabulário técnico da área, que incluía unidades de medida
+      específicas do processo de mineração.
+
+      > ## Principais técnicas e ferramentas
+      - IBM Cloud
+      - IBM Watson Assistant
+      - IBM Watson Speech to Text
+      - IBM Watson Text to Speech
+      - Java 8
+      - Spring Boot
+      - AngularJS
+      - Web Services
 
   - company: dti digital
-    role: Analista de sistemas
+    role: Analista de Sistemas
     period: Fevereiro de 2019 – Setembro de 2019
     highlights: |-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam posuere, mi a tincidunt cursus, lorem augue dignissim erat, vitae tincidunt nibh sem eget urna.
+      Na dti digital, atuei como desenvolvedor Pleno no projeto de chatbot da MRV Engenharia,
+      com integração ao WhatsApp Business, ainda pouco explorado na época.
 
-      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; integer tempor lorem.
+      Foi minha primeira experiência profissional com C# e .NET Core. Por já ter sólida
+      bagagem com Java, a transição foi bastante natural. Também participei do projeto de
+      transformação digital da plataforma de precificação de imóveis da MRV, que envolvia
+      regras de negócio complexas. Para melhor organizar a lógica, utilizamos o padrão
+      Mediator com a biblioteca MediatR, garantindo maior separação de responsabilidades.
+
+      > ## Principais técnicas e ferramentas
+      - C#
+      - .NET Core
+      - Web Services
+      - IBM Watson Assistant
+      - WhatsApp Business Platform
+      - NUnit
+      - MediatR
+      - SonarQube
+      - JaCoCo
+
+  - company: Hop AI
+    role: Desenvolvedor de Software
+    periods:
+      - Outubro de 2017 – Fevereiro de 2019
+    highlights: |-
+      Iniciei minha carreira na Hop AI como estagiário, sendo efetivado como desenvolvedor
+      Júnior. Por ser parceira da IBM, a empresa tinha forte atuação com IBM Cloud e
+      IBM Watson, principalmente com o Watson Conversation, precursor do Watson Assistant.
+
+      Atuei no desenvolvimento e evolução de chatbots para grandes clientes, como Stihl,
+      FCA e Tigre. No caso do Tigre, acompanhei o projeto do início ao fim: concepção,
+      curadoria de intenções, evolução dos fluxos e mensuração de performance.
+
+      Criei consultas personalizadas na plataforma para reconstruir os diálogos completos
+      dos usuários, o que me permitia identificar com precisão se os ajustes deveriam ser
+      feitos nos classificadores de intenção (intents) ou na estrutura do fluxo conversacional.
+      Utilizando as métricas Precision, Recall e F1-Score, aliado ao volume de invocações
+      por intent, elaborei relatórios que guiaram a evolução do bot.
+
+      Durante essa jornada, também tive contato com AngularJS, Spring Boot, PostgreSQL,
+      MongoDB, webhooks para integração com Facebook Messenger, CI/CD com IBM Continuous
+      Delivery, Blue-Green Deployments, TDD, testes automatizados com Selenium e a
+      certificação IBM Certified Application Developer – Watson V3.
+
+      > ## Principais técnicas e ferramentas
+      - IBM Cloud
+      - IBM Watson Assistant
+      - IBM Watson Discovery
+      - Java 8
+      - Spring Boot
+      - JPA / Hibernate
+      - JUnit
+      - PostgreSQL
+      - MongoDB
+      - AngularJS
+      - Selenium
+      - Web Services
+      - Webhooks
+      - Facebook Messenger
 
 education:
   - institution: Centro Universitário de Belo Horizonte | UniBH
-    degree: Bacharel em Ciência da Computação
+    degree: Bacharelado em Ciência da Computação
     period: 2013 – 2017
 
 certifications:
@@ -84,14 +249,15 @@ certifications:
 
 skills:
   - category: Desenvolvimento Backend
-    items: [Java LTS das versões 8 a 25, Axon Framework, Apache Kafka, Server-Sent Events / SSE, Arquitetura Zero-Release / SDUI, Micronaut, Spring Boot, Spring Batch, Spring Security, JWT, JEE, JUnit, JaCoCo, Mockito, Selenium, Gherkin / Cucumber, SonarQube, Swagger Codegen, C#, .NET Core, NUnit, Python, Jupyter Notebook]
+    items: [Java LTS (8 a 25), Axon Framework, Apache Kafka, Server-Sent Events (SSE), Arquitetura Zero-Release / SDUI, Micronaut, Spring Boot, Spring Batch, Spring Security, JWT, Java EE (JEE), JUnit, JaCoCo, Mockito, Selenium, Gherkin / Cucumber, SonarQube, Swagger / OpenAPI Codegen, C#, .NET Core, NUnit, Python, Jupyter Notebook]
   - category: Desenvolvimento Frontend e Mobile
     items: [React Native, Angular, TypeScript, JavaScript]
   - category: Computação em Nuvem e DevOps
-    items: [AWS, IaC, Kubernetes, k9s, OpenTelemetry, Grafana, Argo CD, Azure, ITSM Service Now, IBM Cloud, IBM Cloud Continuous Delivery]
-  - category: IA / NLP e Chatbots
-    items: [Spec-Driven Development / SDD, OpenSpec skills, MCP, Cursor IDE, IBM Watson, Blip, Einstein Bots]
-  - category: Bancos de dados e ORMs
+    items: [AWS, Infrastructure as Code (IaC), Kubernetes, k9s, OpenTelemetry, Grafana, Argo CD, Azure, ITSM ServiceNow, IBM Cloud, IBM Cloud Continuous Delivery]
+  - category: IA, NLP e Chatbots
+    items: [Spec-Driven Development (SDD), OpenSpec, MCP (Model Context Protocol), Cursor IDE, IBM Watson Assistant, Blip, Salesforce Einstein Bots]
+  - category: Bancos de Dados e ORMs
     items: [SQL Server, PostgreSQL, Oracle Database, MongoDB, Redis / Valkey, Elasticsearch, SQLite, H2, JPA / Hibernate, Entity Framework, Dapper, LucidORM]
-  - category: Práticas de Desenvolvimento
-    items: [SAGA Pattern, Arquitetura Hexagonal / Ports and Adapters, CQRS, Event Sourcing, Idempotência, DDD, TDD, SOLID, APIs RESTful, SOAP, Git Flow, SemVer]
+  - category: Práticas e Arquitetura de Software
+    items: [Padrão SAGA, Arquitetura Hexagonal (Ports & Adapters), CQRS, Event Sourcing, Idempotência, Domain-Driven Design (DDD), Test-Driven Development (TDD), SOLID, APIs RESTful, SOAP, Git Flow, Semantic Versioning (SemVer)]
+

@@ -15,16 +15,7 @@ author_profile: true
   <p class="portfolio-skills">{{ profile.featured_skills | join: " · " }}</p>
   {{ profile.summary | markdownify }}
 
-  <nav class="portfolio-actions" aria-label="Ações de contato">
-    <a class="portfolio-action" href="{{ profile.links.linkedin }}">Perfil no LinkedIn</a>
-    <a class="portfolio-action" href="mailto:{{ profile.email }}">Enviar e-mail</a>
-  </nav>
 </header>
-
-<p class="profile-contact">
-  {{ profile.location }} · <a href="tel:{{ profile.phone | remove: '+' | remove: ' ' }}">{{ profile.phone }}</a> ·
-  <a href="{{ profile.links.website }}">Site pessoal</a>
-</p>
 
 ## Experiência profissional {#experiencia-profissional}
 

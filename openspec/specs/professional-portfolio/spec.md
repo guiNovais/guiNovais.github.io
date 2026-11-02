@@ -36,6 +36,10 @@ A página inicial SHALL apresentar, em desktop, uma coluna lateral à esquerda d
 - **WHEN** uma pessoa percorre a coluna lateral somente com o teclado
 - **THEN** os links são alcançáveis em ordem lógica, têm nomes discerníveis e exibem foco visível
 
+#### Scenario: Dados da coluna lateral não são repetidos no conteúdo principal
+- **WHEN** a página inicial exibe a coluna lateral com localização, telefone e website
+- **THEN** o conteúdo principal não exibe um bloco adicional com esses mesmos dados nem ações duplicadas de LinkedIn ou email antes da seção de experiência profissional
+
 ### Requirement: Fidelidade visual ao tema de referência
 A página inicial SHALL preservar a aparência e o comportamento visual nativos do Minimal Mistakes, usando a skin escura `dark` como tema visual da página e sem customizações de estilo posteriores que alterem sua composição.
 

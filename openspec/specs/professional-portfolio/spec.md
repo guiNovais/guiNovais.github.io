@@ -17,6 +17,14 @@ O site SHALL apresentar o perfil profissional em português brasileiro em uma es
 - **WHEN** o conteúdo do portfólio é publicado
 - **THEN** os textos apresentados estão em português brasileiro, o documento declara o idioma `pt-BR` e a página mantém uma hierarquia de títulos e parágrafos que permite leitura editorial escaneável
 
+#### Scenario: Visitante acessa o currículo pela apresentação
+- **WHEN** um visitante chega ao último parágrafo da apresentação
+- **THEN** encontra o texto “Você pode baixar meu currículo aqui”, com “aqui” como um link identificável para baixar o currículo em formato PDF
+
+#### Scenario: Currículo está disponível no site publicado
+- **WHEN** o visitante ativa o link do currículo
+- **THEN** o site entrega o arquivo PDF curricular publicado, sem depender de um caminho local do ambiente de desenvolvimento
+
 ### Requirement: Coluna lateral de perfil
 A página inicial SHALL apresentar, em desktop, uma coluna lateral à esquerda do conteúdo principal, contendo um avatar genérico temporário, o nome, uma descrição breve e links profissionais derivados do perfil publicado.
 

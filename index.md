@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Guilherme Novais — Desenvolvedor de Software"
+title: "Guilherme Novais"
 description: Portfólio profissional de Guilherme Novais, desenvolvedor backend com experiência em aplicações Java, sistemas distribuídos e plataformas financeiras.
 permalink: /
 locale: pt-BR
@@ -12,7 +12,7 @@ author_profile: true
 
 <header class="portfolio-intro">
   <p class="portfolio-eyebrow">{{ profile.headline }}</p>
-  <p class="portfolio-name">{{ profile.name }}</p>
+  <p class="portfolio-skills">{{ profile.featured_skills | join: " · " }}</p>
   {{ profile.summary | markdownify }}
 
   <nav class="portfolio-actions" aria-label="Ações de contato">

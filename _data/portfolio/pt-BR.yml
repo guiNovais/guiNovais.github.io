@@ -1,6 +1,12 @@
 profile:
   name: Guilherme Novais
-  headline: Desenvolvedor Backend
+  headline: Desenvolvedor de Softwares
+  featured_skills:
+    - Java
+    - Spring Boot
+    - SAGA
+    - Axon Framework
+    - OpenSpec
   # Linhas em branco separam parágrafos; Markdown/Kramdown aceita títulos, listas,
   # tabelas, citações, imagens, notas de rodapé, blocos de código e classes .notice/.btn.
   summary: |-

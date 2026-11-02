@@ -238,26 +238,28 @@ education:
   - institution: Centro Universitário de Belo Horizonte | UniBH
     degree: Bacharelado em Ciência da Computação
     period: 2013 – 2017
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere,
+      sapien at cursus fermentum, libero urna consequat justo, vitae tincidunt
+      nibh erat sed magna.
 
 certifications:
   - name: AWS Certified Cloud Practitioner | CLF-C02
     period: Agosto de 2024
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+      efficitur, nisl at tincidunt consequat, urna justo porttitor lorem, vitae
+      commodo nibh massa non erat.
   - name: Oracle Certified Associate, Java SE 8 Programmer | 1Z0-808
     period: Abril de 2023
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+      vulputate, lectus eget aliquet volutpat, lorem neque consequat purus,
+      sed tincidunt arcu libero non massa.
   - name: IBM Certified Application Developer | Watson V3 Certification
     period: Dezembro de 2017
-
-skills:
-  - category: Desenvolvimento Backend
-    items: [Java LTS (8 a 25), Axon Framework, Apache Kafka, Server-Sent Events (SSE), Arquitetura Zero-Release / SDUI, Micronaut, Spring Boot, Spring Batch, Spring Security, JWT, Java EE (JEE), JUnit, JaCoCo, Mockito, Selenium, Gherkin / Cucumber, SonarQube, Swagger / OpenAPI Codegen, C#, .NET Core, NUnit, Python, Jupyter Notebook]
-  - category: Desenvolvimento Frontend e Mobile
-    items: [React Native, Angular, TypeScript, JavaScript]
-  - category: Computação em Nuvem e DevOps
-    items: [AWS, Infrastructure as Code (IaC), Kubernetes, k9s, OpenTelemetry, Grafana, Argo CD, Azure, ITSM ServiceNow, IBM Cloud, IBM Cloud Continuous Delivery]
-  - category: IA, NLP e Chatbots
-    items: [Spec-Driven Development (SDD), OpenSpec, MCP (Model Context Protocol), Cursor IDE, IBM Watson Assistant, Blip, Salesforce Einstein Bots]
-  - category: Bancos de Dados e ORMs
-    items: [SQL Server, PostgreSQL, Oracle Database, MongoDB, Redis / Valkey, Elasticsearch, SQLite, H2, JPA / Hibernate, Entity Framework, Dapper, LucidORM]
-  - category: Práticas e Arquitetura de Software
-    items: [Padrão SAGA, Arquitetura Hexagonal (Ports & Adapters), CQRS, Event Sourcing, Idempotência, Domain-Driven Design (DDD), Test-Driven Development (TDD), SOLID, APIs RESTful, SOAP, Git Flow, Semantic Versioning (SemVer)]
+    description: >-
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat,
+      augue id posuere feugiat, magna libero volutpat mi, vel tincidunt sapien
+      nibh sed justo.
 

@@ -45,6 +45,7 @@ author_profile: true
 <article itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
   <h3 itemprop="credentialCategory">{{ education.degree }}</h3>
   <p><span itemprop="recognizedBy">{{ education.institution }}</span> · <time datetime="{{ education.period }}">{{ education.period }}</time></p>
+  {{ education.description | markdownify }}
 </article>
 {% endfor %}
 
@@ -54,16 +55,6 @@ author_profile: true
 <article itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
   <h3 itemprop="name">{{ certification.name }}</h3>
   <p><time datetime="{{ certification.period }}">{{ certification.period }}</time></p>
+  {{ certification.description | markdownify }}
 </article>
-{% endfor %}
-
-## Habilidades técnicas {#habilidades-tecnicas}
-
-{% for group in content.skills %}
-### {{ group.category }}
-
-<ul class="skill-list">
-  {% for skill in group.items %}<li>{{ skill }}</li>{% endfor %}
-</ul>
-
 {% endfor %}

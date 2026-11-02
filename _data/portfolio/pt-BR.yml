@@ -238,28 +238,43 @@ education:
   - institution: Centro Universitário de Belo Horizonte | UniBH
     degree: Bacharelado em Ciência da Computação
     period: 2013 – 2017
-    description: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere,
-      sapien at cursus fermentum, libero urna consequat justo, vitae tincidunt
-      nibh erat sed magna.
+    description: |-
+      O curso do UniBH tem duração de quatro anos e oferece uma base teórica profunda
+      em Programação de Computadores, Matemática e Lógica. Os conhecimentos básicos 
+      discutidos no curso dão segurança aos alunos para que possam se estabelecer na área de TI 
+      por tempo indeterminado. Estes fundamentos são conceitos que não se alteram tão rapidamente
+      quanto as tecnologias da informática, que surgem e morrem anualmente. Após a consolidação
+      das bases da Ciência da Computação, o aluno tem contato com as tecnologias de TI (banco de dados,
+      redes de computadores, inteligência artificial, compiladores, engenharia de software etc.).
+      Esta união entre ciência básica e tecnologia, aliada a uma elevada carga de trabalhos práticos 
+      extraclasse, formam pessoas capazes de transformar o mercado de trabalho, por meio da 
+      geração de novas tecnologias.
 
 certifications:
   - name: AWS Certified Cloud Practitioner | CLF-C02
     period: Agosto de 2024
-    description: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-      efficitur, nisl at tincidunt consequat, urna justo porttitor lorem, vitae
-      commodo nibh massa non erat.
+    description: |-
+      Os portadores desta certificação possuem uma compreensão fundamental dos serviços de TI e de 
+      suas aplicações na Nuvem AWS. Eles demonstraram fluência em nuvem e conhecimentos básicos sobre a AWS.
+      Os detentores desta credencial são capazes de identificar serviços essenciais da AWS necessários para 
+      estruturar projetos voltados a essa plataforma.
+
+      Disponível em [Credly](https://www.credly.com/badges/45b51e28-7278-4e84-aa5e-45b6721c79e2/public_url)
+
   - name: Oracle Certified Associate, Java SE 8 Programmer | 1Z0-808
     period: Abril de 2023
-    description: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-      vulputate, lectus eget aliquet volutpat, lorem neque consequat purus,
-      sed tincidunt arcu libero non massa.
+    description: |-
+      Um Oracle Certified Associate, Java SE 8 Programmer demonstrou conhecimento de conceitos 
+      de orientação a objetos, da linguagem de programação Java e conhecimento geral sobre 
+      plataformas e tecnologias Java.
+
+      Disponível em [Oracle](https://catalog-education.oracle.com/ords/certview/sharebadge?id=D7A44D33371E00EB99E4C197A894853BB56361277C5ADB76E1CED012B838D3D1)
   - name: IBM Certified Application Developer | Watson V3 Certification
     period: Dezembro de 2017
-    description: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat,
-      augue id posuere feugiat, magna libero volutpat mi, vel tincidunt sapien
-      nibh sed justo.
+    description: |-
+      Este profissional técnico compreende os conceitos essenciais para o desenvolvimento de 
+      aplicações utilizando os serviços IBM Watson. Possui experiência com a plataforma IBM Bluemix 
+      Platform-as-a-Service e é capaz de consumir os serviços IBM Watson em uma aplicação. 
+      Este profissional consegue executar essas tarefas com pouca supervisão.
 
+      Disponível em [Credly](https://www.credly.com/badges/8f4d6930-5675-48d7-badf-aae512673777/)
